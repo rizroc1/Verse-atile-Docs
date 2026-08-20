@@ -1,0 +1,59 @@
+site_name: Verse-atile Documentation
+site_description: Official public documentation, tutorials, compatibility information, updates, and community resources for Verse-atile by RiZRoC.
+site_url: https://rizroc1.github.io/Verse-atile-Docs/
+
+repo_name: rizroc1/Verse-atile-Docs
+repo_url: https://github.com/rizroc1/Verse-atile-Docs
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Overview: getting-started/index.md
+      - Installation: getting-started/installation.md
+  - Compatibility:
+      - UE 5.2 / 5.7 / 5.8: compatibility/index.md
+  - Authoring:
+      - Overview: authoring/index.md
+      - Classic Blueprint: authoring/blueprint.md
+      - C++: authoring/cpp.md
+      - Verse / Verse-atile: authoring/verse.md
+      - C++ to Visual Nodes: authoring/visual-nodes.md
+  - AI:
+      - Local & Optional Providers: ai/index.md
+  - Systems:
+      - Overview: systems/index.md
+  - Community:
+      - Feedback & Feature Requests: community/index.md
+  - Updates:
+      - Changelog: updates/changelog.md
+  - Privacy:
+      - Permissions & Data: privacy/index.md
+  - Security:
+      - Security Overview: security/index.md
+  - Credits:
+      - Special Thanks: credits/special-thanks.md
+      - Third-Party Notices: credits/index.md
+  - Legal:
+      - Copyright & Ownership: legal/copyright.md
+      - Terms & Disclaimers: legal/terms.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
