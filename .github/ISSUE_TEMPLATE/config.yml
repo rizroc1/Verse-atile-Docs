@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Verse-atile documentation
+    url: https://rizroc1.github.io/Verse-atile-Docs/
+    about: Read public documentation, compatibility information, privacy guidance, and updates before filing an issue.
+  - name: Community feedback hub
+    url: https://rizroc1.github.io/Verse-atile-Docs/community/
+    about: Choose the right feedback, feature, survey, bug, or hardware-report path.
