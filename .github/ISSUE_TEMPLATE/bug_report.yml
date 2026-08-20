@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a reproducible Verse-atile problem.
+title: "[BUG] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove secrets, private source, private project content, account data, and confidential logs before posting. If a future private security channel is required, use that instead of a public issue.
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Unreal Engine version
+      options:
+        - UE 5.2
+        - UE 5.7
+        - UE 5.8
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Verse-atile version
+      placeholder: Example: 1.2.3 or build/release identifier
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Installation / update
+        - Blueprint / C++ / Verse / Visual Nodes
+        - AI / Versa / Autopilot
+        - Animation / Motion Studio
+        - Weather / metabolism / environment
+        - World / Continuum / streaming
+        - Character / MetaHuman / Mutable
+        - Weapons / vehicles / gameplay
+        - Optimization / hardware
+        - Security / Guardian
+        - Storage / cloud / backups
+        - Documentation / website
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_logs
+    attributes:
+      label: Sanitized log excerpt (optional)
+      description: Only paste the smallest relevant excerpt after removing private paths, user data, tokens, keys, and confidential project details.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public submission check
+      options:
+        - label: I removed private source, credentials, private project material, and sensitive data.
+          required: true
