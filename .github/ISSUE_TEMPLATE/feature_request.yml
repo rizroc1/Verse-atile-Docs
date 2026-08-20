@@ -1,0 +1,68 @@
+name: Feature request
+description: Suggest a new Verse-atile feature or improvement.
+title: "[FEATURE] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape Verse-atile. Do not include private source code, credentials, private project files, or confidential material.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Explain the workflow, limitation, or user need.
+      placeholder: Describe the problem or opportunity.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed feature
+      description: What would you like Verse-atile to do?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Beginner Mode / presets
+        - AI / Versa / Autopilot
+        - Animation / Motion Studio
+        - Weather / metabolism / survival
+        - World / Continuum / streaming
+        - Character / MetaHuman / Mutable
+        - Weapons / vehicles / gameplay
+        - Blueprint / C++ / Verse / Visual Nodes
+        - Optimization / hardware
+        - Security / Guardian
+        - Storage / cloud / backups
+        - Documentation / website / community
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Unreal Engine version
+      options:
+        - UE 5.2
+        - UE 5.7
+        - UE 5.8
+        - Not engine-specific
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why would this help?
+      description: Tell us who benefits and how often you would use it.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public submission check
+      options:
+        - label: I have not included private Verse-atile source, credentials, private user data, or confidential project material.
+          required: true
